@@ -1,0 +1,19 @@
+{
+  "name": "srm-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratyusha2001/SRM-Hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratyusha2001/SRM-Hackathon/issues"
+  },
+  "homepage": "https://github.com/pratyusha2001/SRM-Hackathon#readme"
+}

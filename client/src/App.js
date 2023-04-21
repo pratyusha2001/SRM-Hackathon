@@ -1,5 +1,7 @@
 import './App.css';
+import DashboardPg from './components/DashboardPg';
 import FileUpload from './components/FileUpload';
+import HomePg from './components/HomePg';
 import SignIn from './components/SignIn';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
