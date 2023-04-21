@@ -46,61 +46,10 @@ router.post('/processing', async (req, res) => {
   let x = preds.arraySync();
   console.log(x)
   if (x[0] < 0.5) {
-    res.send('Positive For Covid-19 ' + x);
+    res.redirect(process.env.CLIENT_URL + '/ml/positive')
   } else {
-    res.send('Negative for Covid-19 ' + x);
+    res.redirect(process.env.CLIENT_URL + '/ml/negative');
   }
 });
 
-// // Use the express-fileupload middleware
-//
-// // loading model
-// const tf = require('@tensorflow/tfjs');
-// const tfnode = require('@tensorflow/tfjs-node');
-// let model;
-//
-// async function loadModel() {
-//   const handler = tfnode.io.fileSystem(path.join(__dirname, '/ml_model/model.json'));
-//   model = await tf.loadLayersModel(handler);
-//   console.log("Model loaded")
-// }
-//
-// loadModel();
-//
-// router.get("/upload", (_req, res) => {
-//   res.sendFile(path.join(__dirname, '/public/image_input.html'));
-// })
-//
-//
-// router.post("/processing", (req, res) => {
-//   // Get the file that was set to our field named "image"
-//   const { image } = req.files;
-//
-//   // Move the uploaded image to our upload folder
-//   image.mv(__dirname + '/upload/' + image.name);
-//
-//   // ml things
-//   function model_predict(img_path, model) {
-//     return tf.browser.fromPixels(img_path)
-//       .then(img => {
-//         img = img.resizeNearestNeighbor([224, 224]).expandDims(0)
-//         const preds = model.predict(img);
-//         return preds.argMax().dataSync()[0];
-//       });
-//   }
-//
-//   // Make prediction
-//   let preds = model_predict(image, model);
-//
-//   if (preds[0][0] == 0) {
-//     prediction = 'Positive For Covid-19';
-//   } else {
-//     prediction = 'Negative for Covid-19';
-//   }
-//
-//   // All good
-//   res.send(image);
-//   console.log(prediction)
-// })
-//
 module.exports = router;
