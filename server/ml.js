@@ -45,10 +45,10 @@ router.post('/processing', async (req, res) => {
   const preds = await modelPredict(filePath);
   let x = preds.arraySync();
   console.log(x)
-  if (x[0] < 0.5) {
-    res.redirect(process.env.CLIENT_URL + '/ml/positive')
+  if (x[0] > 0.2) {
+    res.redirect(process.env.CLIENT_URL + 'ml/success')
   } else {
-    res.redirect(process.env.CLIENT_URL + '/ml/negative');
+    res.redirect(process.env.CLIENT_URL + 'ml/failure');
   }
 });
 
