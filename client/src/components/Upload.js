@@ -22,8 +22,8 @@ const Upload = () => {
     return (
         <div id="upload">
             <Container >
-                <p className='home-header' style={{textAlign:"center", marginTop:"0px"}}>
-                Securely upload and access your files anytime, anywhere
+                <p className='home-header' style={{ textAlign: "center", marginTop: "0px" }}>
+                    Securely upload and access your files anytime, anywhere
                 </p>
                 <br></br>
                 <br></br>
@@ -33,7 +33,11 @@ const Upload = () => {
                             <Card.Img variant="top" src={MRI} style={{ marginTop: "12px" }} />
                         </Container>
                         <Card.Body>
-                                    <button className='upload-btn' onClick={handleSubmission}>Upload</button>
+                            <form action="/ml/processing" method="POST" enctype="multipart/form-data">
+                                <input type="file" name="image" />
+                                <button className='upload-btn' type="submit">Upload</button>
+                            </form>
+                            {/* <button className='upload-btn' onClick={handleSubmission}>Upload</button> */}
                         </Card.Body>
                     </Card>
 
@@ -56,7 +60,7 @@ const Upload = () => {
                     </Card>
                 </CardGroup>
             </Container>
-            <UploadWave/>
+            <UploadWave />
         </div>
     );
 }
