@@ -7,10 +7,11 @@ import linkedin from '../img/Linkedin.png';
 import fb from '../img/Facebook.png'
 
 
-const SignIn = () => {
-    const googleAuth = () => {
+const Home = (userDetails) => {
+    const user = userDetails.user;
+    const logout = () => {
         window.open(
-            `${process.env.REACT_APP_API_URL}/auth/google/callback`,
+            `${process.env.REACT_APP_API_URL}/auth/logout`,
             "_self"
         );
     };
@@ -36,13 +37,13 @@ const SignIn = () => {
                         <Row className="signin-form">
                             <Col lg={8}>
                                 <Form.Group className="mb-3 signin-inputs" controlId="formBasicEmail">
-                                    <Form.Control type="email" placeholder="Email" />
+                                    <Form.Control type="email" defaultValue = {user.email} />
                                 </Form.Group>
                             </Col>
 
                             <Col lg={8}>
                                 <Form.Group className="mb-3 signin-inputs" controlId="formBasicPassword">
-                                    <Form.Control type="password" placeholder="Password" />
+                                    <Form.Control type="password" defaultValue = {user.name} />
                                 </Form.Group>
                             </Col>
                         </Row>
@@ -52,7 +53,7 @@ const SignIn = () => {
                         </div>
                         <Row>
                             <Col>
-                                <button className='signin-submit' onClick={googleAuth} style={{marginTop:"25px"}}>Sign In</button>
+                                <button className='signin-submit' onClick={logout} style={{marginTop:"25px"}}>Logout</button>
                             </Col>
                         </Row>
                     </Form>
@@ -64,4 +65,4 @@ const SignIn = () => {
     );
 }
 
-export default SignIn;
+export default Home;
