@@ -274,7 +274,6 @@
 }
 
 .contact-form{
-   
     margin-top: 50px;
 }
 .form-inline input {
@@ -306,4 +305,104 @@
         margin-top: 80px;
     }
     }
+
     
+/*DASHBOARD SIDEBAR*/ 
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background: #CFFFE7;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        font-weight: bold;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: #8D8C8C;
+        padding: 16px;
+        text-decoration: none;
+      }
+       
+      .sidebar a.active {
+        background-color: white;
+        color: #06A053;
+      }
+      
+      .sidebar a:hover:not(.active) {
+        background-color:#06A053;
+        color: white;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+      
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+      
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+
+
+
+/* *{
+    border:1px solid red;
+} */
+
+.dash-content-form input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    color:#06A053;
+    background: #F9F8F4;
+    border: 1px solid #06A053;
+    width: 750px;
+    height: 37px;
+    border-radius: 7px;
+  }
+.dash-content-form ::placeholder{
+    color:#06A053;
+}
+.cont-card-2{
+    border-color: transparent !important;
+    margin-top: 15px;
+}
+.doct-img{
+    border: 1px solid #06A053;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 600px) {
+   .dash-content-form input{
+       width: 200px;
+    }
+    .rightbar{
+        display: none;
+    }
+    }
+    @media only screen and (max-width: 950px) and (min-width: 600px) {
+        .dash-content-form input{
+            width: 100px;
+         }
+         .righ1a0r{
+             display: none;
+         }
+         }
+     

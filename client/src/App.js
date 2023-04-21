@@ -1,4 +1,5 @@
 import './App.css';
+import DashboardPg from './components/DashboardPg';
 import FileUpload from './components/FileUpload';
 import HomePg from './components/HomePg';
 import SignIn from './components/SignIn';
@@ -10,7 +11,8 @@ function App() {
       {/* <p>Hackathon</p> */}
        {/* <FileUpload/>  */}
       {/* <SignIn/> */}
-      <HomePg/>
+      {/* <HomePg/> */}
+      <DashboardPg/>
     </div>
   );
 }
