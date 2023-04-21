@@ -9,9 +9,9 @@ const Home = () => {
                 <Row>
                     <Col sm={2} md={6}>
                      <p className='home-header'>Quick and Easy Imaging Diagnosis 
-                     <br></br>Lorem  ipsum dolor </p>
+                      </p>
                      <p className='home-desc'>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     Discover a new level of understanding and control over your health with our medical imagery analysis app. With detailed and accurate imaging, you can confidently make informed decisions about your diagnosis, treatment, and overall well-being
                      </p>
                      <br></br>
                      <h1 className='home-fig'>90%</h1>

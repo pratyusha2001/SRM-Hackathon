@@ -4,6 +4,7 @@ import Home from "./Home";
 import Wave from "./Wave";
 import Upload from "./Upload";
 import News from "./News";
+import Contact from "./Contact";
 
 const HomePg=()=>{
     return(
@@ -12,6 +13,7 @@ const HomePg=()=>{
             <Home/> 
             <Upload/>
             <News/>
+            <Contact/>
         </div>
     );
 }

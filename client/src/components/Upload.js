@@ -22,8 +22,9 @@ const Upload = () => {
     return (
         <div id="upload">
             <Container >
-                <p className='home-header' style={{textAlign:"center"}}>Lorem ipsum dolor sit amet?</p>
-                <p className='home-desc' style={{textAlign:"center", marginTop:"0px"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                <p className='home-header' style={{textAlign:"center", marginTop:"0px"}}>
+                Securely upload and access your files anytime, anywhere
+                </p>
                 <br></br>
                 <br></br>
                 <CardGroup>

@@ -6,7 +6,7 @@ const Wave = () => {
 /*     < svg xmlns = "http://www.w3.org/2000/svg" viewBox = "0 0 1440 320" >
       <path fill="#CFFFE7" d="M0,128L60,112C120,96,240,64,360,69.3C480,75,600,117,720,149.3C840,181,960,203,1080,186.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
     </svg > */
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="wave">
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
         <stop offset="2.65%" stop-color="#CFFFE7" />
