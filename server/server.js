@@ -4,7 +4,8 @@ const cors = require("cors");
 const passport = require("passport");
 const cookieSession = require("cookie-session");
 const passportSetup = require("./passport");
-
+const authRoute = require("./auth");
+const authRoute = require("./ml");
 const app = express();
 
 
@@ -27,6 +28,9 @@ app.use(
     credentials: true,
   })
 )
+
+app.use("/auth", authRoute);
+app.use("/ml", mlRoute)
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`))
