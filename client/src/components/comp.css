@@ -1,7 +1,13 @@
-/* *{
+/*  *{
     border: 1px solid red;
-} */
-
+}   */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:asap;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
 #signin{
     text-align: center;
     justify-content: center;
@@ -94,3 +100,309 @@
     color: white;
     border: transparent;
 }
+
+/*TOPNAV*/
+.topnav{
+    background: white;
+    color: #B9B8B8;
+    height: 77px;
+    z-index: 1;
+}
+.navbar-light .navbar-toggler{
+    background-color: rgb(240, 240, 240)  !important;
+  }
+.nav{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+    color: #B9B8B8;
+    background: white;
+}
+.nav-link{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.profile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    border: transparent;
+}
+
+
+/*HOME*/
+#home{
+    background: linear-gradient(90.19deg, #CFFFE7 2.65%, #F9F8F4 101.33%); 
+     height: 580px;
+}
+
+.home-header{
+    margin-top: 65px;
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #06A053;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.home-desc{
+    margin-top: 45px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #8D8C8C;
+    text-align: justify;
+    text-justify: inter-word;
+} 
+.home-fig{
+    text-align: left;
+    font-size: 55px;
+    color: #06A053;
+}
+.home-fig-desc{
+    text-align: left;
+    color: #8D8C8C;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* @media only screen and (max-width: 950px) and (min-width: 780px){
+    #home{
+        height: 750px;
+    }
+} */
+@media only screen and (max-width: 450px) {
+    .home-header, .home-fig{
+        margin-top: 25px;
+         font-size: 25px;
+        }
+         .home-desc, .home-fig-desc{
+            font-size: 18px; 
+        } 
+        .home-fig{
+            margin-top: -15px;
+        } 
+        .logo{
+            width: 200px;
+        }
+}
+@media only screen and (max-width: 600px) and (min-width: 450px) {
+     .home-header, .home-fig{
+    margin-top: 25px;
+     font-size: 25px;
+    }
+     .home-desc, .home-fig-desc{
+        font-size: 18px;
+    } 
+    .home-fig{
+        margin-top: -15px;
+    } 
+    .logo{
+        width: 200px;
+    }
+   }
+/*UPLOAD*/
+#upload{
+    margin-top: 155px;
+    margin-bottom: 55px;
+}
+.upload-card{
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 15px !important;
+    border: 2px solid gray;
+}
+.upload-btn{
+    background: #06A053;
+    color: #ffffff;
+    width: 105px;
+    height: 30px;
+    border: transparent;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .upload-card{
+    width: 18rem;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin: auto;
+    margin-bottom: 55px !important;
+  }
+  }
+
+/*NEWS*/
+#news{
+    margin-top: -75px;
+    height: 700px;
+    background: linear-gradient(90.19deg, #CFFFE7 2.67%, #F9F8F4 101.34%);
+}
+
+@media only screen and (max-width: 600px) {
+    #news{
+     padding-top: 12px;
+     height: 450px;
+    }
+    .news-desc{
+        font-size: 10px;
+    }
+    }
+/*CONTACT*/
+#contact{
+    height: 350px;
+    margin: auto;
+}
+#contact a{
+    text-decoration: none;
+    color: #8D8C8C;
+}
+.contact-row{
+    margin-top: 80px !important;
+    margin: auto;
+}
+.contact-col{
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-form{
+    margin-top: 50px;
+}
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    color:#06A053;
+    background-color: #fff;
+    border: 1px solid #06A053;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+  }
+.form-inline ::placeholder{
+    color:#06A053;
+}
+.form-inline button {
+    padding: 8px 35px;
+    background: #06A053;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #contact{
+        margin-top: 80px;
+    }
+    }
+
+    
+/*DASHBOARD SIDEBAR*/ 
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background: #CFFFE7;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        font-weight: bold;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: #8D8C8C;
+        padding: 16px;
+        text-decoration: none;
+      }
+       
+      .sidebar a.active {
+        background-color: white;
+        color: #06A053;
+      }
+      
+      .sidebar a:hover:not(.active) {
+        background-color:#06A053;
+        color: white;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+      
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+      
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+
+
+
+/* *{
+    border:1px solid red;
+} */
+
+.dash-content-form input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    color:#06A053;
+    background: #F9F8F4;
+    border: 1px solid #06A053;
+    width: 750px;
+    height: 37px;
+    border-radius: 7px;
+  }
+.dash-content-form ::placeholder{
+    color:#06A053;
+}
+.cont-card-2{
+    border-color: transparent !important;
+    margin-top: 15px;
+}
+.doct-img{
+    border: 1px solid #06A053;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 600px) {
+   .dash-content-form input{
+       width: 200px;
+    }
+    .rightbar{
+        display: none;
+    }
+    }
+    @media only screen and (max-width: 950px) and (min-width: 600px) {
+        .dash-content-form input{
+            width: 100px;
+         }
+         .righ1a0r{
+             display: none;
+         }
+         }
+     
