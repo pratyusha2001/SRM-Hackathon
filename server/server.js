@@ -4,13 +4,15 @@ const cors = require("cors");
 const passport = require("passport");
 const cookieSession = require("cookie-session");
 const passportSetup = require("./passport");
-
+const authRoute = require("./auth");
+const mlRoute = require("./ml");
 const app = express();
-
+const fileUpload = require("express-fileupload")
+app.use(fileUpload());
 
 app.use(
   cookieSession({
-    name:"session",
+    name: "session",
     keys: ["saptarshi"],
     maxAge: 24 * 60 * 60 * 100,
   })
@@ -27,6 +29,10 @@ app.use(
     credentials: true,
   })
 )
+
+app.use(express.json())
+app.use("/ml", mlRoute);
+app.use("/auth", authRoute);
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`))
