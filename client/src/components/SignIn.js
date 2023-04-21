@@ -8,6 +8,12 @@ import fb from '../img/Facebook.png'
  */
 
 const SignIn = () => {
+    const googleAuth = () => {
+        window.open(
+            `${process.env.REACT_APP_API_URL}/auth/google/callback`,
+            "_self"
+        );
+    };
     return (
         <div id="signin">
             <Card className='signin-card'>
@@ -46,7 +52,7 @@ const SignIn = () => {
                         </div>
                         <Row>
                             <Col>
-                                <button className='signin-submit' style={{marginTop:"25px"}}>Sign In</button>
+                                <button className='signin-submit' onClick={googleAuth} style={{marginTop:"25px"}}>Sign In</button>
                             </Col>
                         </Row>
                     </Form>
