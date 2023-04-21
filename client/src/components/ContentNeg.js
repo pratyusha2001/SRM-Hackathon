@@ -6,7 +6,7 @@ import dr from '../img/dr.png'
 import chart from '../img/chart.jpg'
 import findings from '../img/finding.jpg'
 
-const Content = () => {
+const ContentNeg = () => {
     return (
         <div>
             <Card style={{ borderColor: "transparent" }}>
@@ -21,8 +21,8 @@ const Content = () => {
             </Card> */}
             <p className="home-header" style={{ marginTop: "5px" }}>Report</p>
             <Row>
-              <h1 style={{color:"Red"}}>Covid 19 Positive</h1>
-              {/* <h1 style={{color:"Green"}}>Covid 19 Negative</h1> */}
+              {/* <h1 style={{color:"Red"}}>Covid 19 Positive</h1> */}
+               <h1 style={{color:"Green"}}>Covid 19 Negative</h1>
             </Row>
             <p className="home-header" style={{ marginTop: "5px" }}>Precautions</p>
             <p>Increasing air filtration in your heating, ventilation, and air conditioning (HVAC)system such as by changing filters  <br></br> frequently and using filters that are properly fitted and provide higher filtration
@@ -64,4 +64,4 @@ const Content = () => {
     );
 }
 
-export default Content;
+export default ContentNeg;

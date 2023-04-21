@@ -1,11 +1,12 @@
 import Sidebar from "./Sidebar";
+import SidebarNeg from "./SidebarNeg";
 
-const DashboardPg=()=>{
+const DashboardPgNeg=()=>{
     return(
         <div style={{backgroundColor:"#f9f8f4", paddingBottom:"0px"}}>
-            <Sidebar/>
+            <SidebarNeg/>
         </div>
     );
 }
 
-export default DashboardPg;
+export default DashboardPgNeg;
