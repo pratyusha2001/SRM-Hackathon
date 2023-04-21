@@ -1,7 +1,10 @@
-/* *{
+/*  *{
     border: 1px solid red;
-} */
-
+}   */
+*{
+    margin: 0;
+    padding: 0;
+}
 #signin{
     text-align: center;
     justify-content: center;
@@ -93,4 +96,99 @@
     background: #06A053;
     color: white;
     border: transparent;
+}
+
+/*TOPNAV*/
+.topnav{
+    background: white;
+    color: #B9B8B8;
+    height: 77px;
+    z-index: 1;
+}
+.navbar-light .navbar-toggler{
+    background-color: rgb(240, 240, 240)  !important;
+  }
+.nav{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+    color: #B9B8B8;
+    background: white;
+}
+.nav-link{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.profile{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    border: transparent;
+}
+
+/*HOME*/
+#home{
+    background: linear-gradient(90.19deg, #CFFFE7 2.65%, #F9F8F4 101.33%); 
+     height: 600px;
+}
+.home-header{
+    margin-top: 65px;
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #06A053;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.home-desc{
+    margin-top: 45px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #8D8C8C;
+    text-align: justify;
+    text-justify: inter-word;
+} 
+.home-fig{
+    text-align: left;
+    font-size: 55px;
+    color: #06A053;
+}
+.home-fig-desc{
+    text-align: left;
+    color: #8D8C8C;
+    font-size: 18px;
+    font-weight: 600;
+}
+/*UPLOAD*/
+#upload{
+    margin-top: 155px;
+    margin-bottom: 55px;
+}
+.upload-card{
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 15px !important;
+    border: 2px solid gray;
+}
+.upload-btn{
+    background: #06A053;
+    color: #ffffff;
+    width: 105px;
+    height: 30px;
+    border: transparent;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#news{
+    margin-top: -75px;
+    height: 800px;
+    background: linear-gradient(90.19deg, #CFFFE7 2.67%, #F9F8F4 101.34%);
 }

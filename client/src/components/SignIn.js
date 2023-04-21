@@ -2,10 +2,10 @@ import { Row, Col, Card } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import "./comp.css"
 import img from '../img/signin-img.png'
-import gmail from '../img/Gmail.png'
+/* import gmail from '../img/Gmail.png'
 import linkedin from '../img/Linkedin.png';
 import fb from '../img/Facebook.png'
-
+ */
 
 const SignIn = () => {
     return (

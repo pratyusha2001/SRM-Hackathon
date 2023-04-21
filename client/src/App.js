@@ -1,5 +1,6 @@
 import './App.css';
 import FileUpload from './components/FileUpload';
+import HomePg from './components/HomePg';
 import SignIn from './components/SignIn';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <p>Hackathon</p> */}
        {/* <FileUpload/>  */}
-      <SignIn/>
+      {/* <SignIn/> */}
+      <HomePg/>
     </div>
   );
 }
