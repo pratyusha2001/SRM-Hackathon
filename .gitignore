@@ -6,6 +6,8 @@
 /.pnp
 .pnp.js
 .env
+/server/oauth_secrets.json
+/server/uploads
 
 # testing
 /coverage

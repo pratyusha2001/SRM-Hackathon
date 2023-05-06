@@ -6,14 +6,14 @@ import Upload from "./Upload";
 import News from "./News";
 import Contact from "./Contact";
 
-const HomePg=()=>{
-    return(
+const HomePg = () => {
+    return (
         <div>
-            <TopNav/>
-            <Home/> 
-            <Upload/>
-            <News/>
-            <Contact/>
+            <TopNav />
+            <Home />
+            <Upload />
+            <News />
+            <Contact />
         </div>
     );
 }

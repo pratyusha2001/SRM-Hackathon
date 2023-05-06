@@ -16,15 +16,15 @@ const Contact = () => {
                     </Row>
                     <Row>
                         <Col>
-                    <form className="form-inline contact-form center">
-                        <label for="email"></label>
-                        <input type="email" id="email" placeholder="Enter your email" name="email" className="contact-mail"/>
+                            <form className="form-inline contact-form center">
+                                <label for="email"></label>
+                                <input type="email" id="email" placeholder="Enter your email" name="email" className="contact-mail" />
                                 <button type="submit">Submit</button>
-                    </form>
-                    </Col>
+                            </form>
+                        </Col>
                     </Row>
-                        </Container>
                 </Container>
+            </Container>
         </div>
     );
 }
